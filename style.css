@@ -1,0 +1,196 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	/* font-size: 100%; */
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+    /* font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif; */
+
+}
+:root{
+    --Dark-cyan-hover: hsl(158, 36%, 20%);
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --p-fs:14px;
+    box-sizing: border-box;
+}
+
+/* ############### Mobile ############### */
+@media (max-width:530px) {
+    .wrapper{
+        flex-direction: column;
+        width: 360px;
+    }
+    .img{
+
+    background-image: url(./images/image-product-mobile.jpg);
+        width: 100%;
+        height: 15em;
+    border-radius: 0.8em 0.8em 0 0 ;
+
+    background-size:cover;
+        background-position: center;
+    }
+    .txt{
+        width: 100%;
+        border-radius: 0 0  0.8em 0.8em  ;
+    }
+}
+/* ############### Desktop ############### */
+@media (min-width:530px) {
+    .wrapper{
+        flex-direction: row;
+        max-width: 38em;
+    }
+    .img{
+
+    background-image: url(./images/image-product-desktop.jpg);
+        width: 50%;
+        border-radius: 0.8em 0 0 0.8em;
+
+        background-size:cover;
+    }
+    .txt{
+        width: 50%;
+        border-radius: 0 0.8em 0.8em 0;
+    }
+}
+
+/* ############### Body ############### */
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+/* ############### wrapper ############### */
+.wrapper{
+    display: flex;
+    margin: 1em;
+
+}
+
+/* ############### img ############### */
+.img{
+    background-repeat: no-repeat;
+    /* background-size: 100%; */
+    
+}
+
+/* ############### txt ############### */
+.txt{
+    background-color: var(--White);
+    padding: 2em;
+}
+
+/* ############### pre-heading ############### */
+
+.pre-heading{
+    font-size: 0.8em;
+    font-weight: 400;
+    letter-spacing: 0.3em;
+    color:var(--Dark-grayish-blue);
+    font-family:'Montserrat', sans-serif ;
+}
+/* ############### heading ############### */
+.heading{
+    color: var(--Very-dark-blue);
+    font-family: 'Fraunces', serif;
+    font-size: 2em;
+    font-weight:700 ;
+    margin: 0.7em 0;
+}
+
+/* ############### desc ############### */
+.desc{
+    color:var(--Dark-grayish-blue);
+    font-family:'Montserrat', sans-serif ;
+    font-size: var(--p-fs);
+    line-height: 1.5em;
+    font-weight: 400;
+}
+
+/* ############### price ############### */
+.price{
+    display: flex;
+    padding: 1em 0;
+    align-items: center;
+    margin: 0.5em 0 0.3 em;
+}
+
+/* ############### price-big ############### */
+.price-big{
+    color: var(--Dark-cyan);
+    font-family:'Fraunces', serif ;
+    font-size: 2em;
+    font-weight: 700;
+    margin-right: 0.7em;
+    text-align: left;
+}
+
+/* ############### price-small ############### */
+.price-small{
+    color: var(--Dark-grayish-blue);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    text-decoration-line: line-through;
+}
+/* ############### btn ############### */
+.btn{
+    background-color: var(--Dark-cyan);
+    border: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5em;
+    padding: 1.1em 0;
+    cursor: pointer;
+    
+}
+.btn:hover{
+    background-color:var(--Dark-cyan-hover) ;
+}
+
+/* ############### btn-svg ############### */
+
+
+/* ############### btn-txt ############### */
+.btn-txt{
+    margin-left: 1em;
+    color: var(--White);
+    font-size: 1em;
+    font-weight: 700; 
+}
+
+
+
+
+/* ############### Footer ############### */
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
